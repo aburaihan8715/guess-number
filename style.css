@@ -1,0 +1,208 @@
+
+/* =========google font========= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* =========variables========== */
+:root {
+  --primary: #212529;
+  --secondary: #22a39f;
+  --gray: #fff;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--primary);
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--gray);
+  padding: 3rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 96rem;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--secondary);
+  padding: 2rem;
+}
+.header {
+  border-bottom: 0.6rem solid var(--secondary);
+  position: relative;
+  height: 25rem;
+  height: 25rem;
+}
+
+.div-guessinfo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.btn-again {
+  background: var(--secondary);
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: inherit;
+  color: inherit;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.btn-again:hover {
+  box-shadow: 0px 3px 0px 0px var(--gray);
+  cursor: pointer;
+}
+.para-guess-info {
+  text-transform: capitalize;
+}
+
+.heading1 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.div-secret-number {
+  width: 14rem;
+  height: 12rem;
+  background: var(--secondary);
+  font-size: 5rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  line-height: 12rem;
+  color: var(--gray);
+}
+
+/* main start */
+.main {
+  display: flex;
+  gap: 4rem;
+  padding: 8rem 0;
+}
+
+.sec-left {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.inp-guess {
+  border: none;
+  width: 30rem;
+  height: 8rem;
+  padding: 1.5rem;
+  font-size: 3rem;
+  font-family: inherit;
+  color: inherit;
+  outline: 0;
+  text-align: center;
+  background: var(--secondary);
+}
+
+.inp-guess::placeholder {
+  font-size: 2rem;
+  color: inherit;
+  position: relative;
+  top: -3px;
+}
+.inp-guess:focus {
+  border: 1px solid var(--gray);
+}
+
+.btn-check {
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: var(--secondary);
+  transition: 0.5s;
+}
+.btn-check:hover {
+  border: 1px solid var(--gray);
+  box-shadow: 0px 3px 0px 0px var(--gray);
+}
+
+.sec-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-size: 1.6rem;
+  gap: 3rem;
+}
+
+.para-score-wrapper,
+.para-highscore-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.span-score,
+.span-highscore {
+  font-size: 3rem;
+  display: inline-block;
+}
+
+/* Media Queries */
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+  body {
+    padding: 0.5rem;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .div-guessinfo-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .para-guess-info {
+    text-align: center;
+  }
+
+  .heading1 {
+    font-size: 2.5rem;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+  .sec-right {
+    align-items: center;
+  }
+}
+
+/* ==========end======== */
